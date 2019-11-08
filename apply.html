@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "george mason university admissions example website">
+    <title>George Mason University Admissions</title>
+    <link href = "css/bootstrap.css" rel="stylesheet">
+    <link href = "css/bootstrap-theme.css" rel="stylesheet">
+    <link href = "css/Site.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#navbar-Area').load("navbar.html");
+        $('.dateNow').text(new Date().getFullYear());
+      });
+    </script>
+  </head>
+  <body class="createPage">
+    <div id="navbar-Area">
+    </div>
+
+    <div class="container body-content">
+        <div class="form-horizontal centerForm">
+            <h2>Applicant Entry</h2>
+            <hr />
+            <fieldset>
+                <legend>Name</legend>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="firstName">First Name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="input" name="firstName" id="firstName" placeholder="First Name" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="middleName">Middle Name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="input" name="middleName" id="middleName" placeholder="Middle Name" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="lastName">Last Name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="input" name="lastName" id="lastName" placeholder="Last Name" />
+                    </div>
+                </div>
+                <hr/>
+            </fieldset>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="SSN">SSN</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="password" name="SSN" id="SSN" placeholder="SSN" />
+                </div>
+            </div>
+
+            <hr/>
+            <fieldset>
+                <legend>Point of Contact</legend>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Email">Email</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="email" name="Email" id="Email" placeholder="example@example.com"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="homePhone">Home Phone</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="tel" name="homePhone" id="homePhone" placeholder="(XXX) XXX-XXX"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="cellPhone">Cell Phone</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="tel" name="cellPhone" id="cellPhone" placeholder="(XXX) XXX-XXX"/>
+                    </div>
+                </div>
+
+                <hr/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address</legend>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="street">Street</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="street" id="street" placeholder="Street"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="city">City</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="city" id="city" placeholder="City"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="state">State</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="state" id="state" placeholder="State"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="zipCode">Zip Code</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="zipCode" id="zipCode" placeholder="Zip Code"/>
+                    </div>
+                </div>
+
+                <hr/>
+            </fieldset>
+            <fieldset>
+                <legend>Misc Details</legend>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="dateOfBirth">Date Of Birth</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="date" name="dateOfBirth" id="dateOfBirth" placeholder="Date Of Birth"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="gender">Gender</label>
+                    <div class="col-md-10">
+                      <input type="radio" name="gender" value="male"> Male<br>
+                      <input type="radio" name="gender" value="female"> Female<br>
+                      <input type="radio" name="gender" value="other"> Other
+                    </div>
+                </div>
+
+
+                <hr/>
+            </fieldset>
+            <fieldset>
+                <legend>High School Details</legend>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="highSchoolName">High School Name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="highSchoolName" id="highSchoolName" placeholder="High School Name"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="highSchoolCity">High School City</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="highSchoolCity" id="highSchoolCity" placeholder="High School City"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="gradDate">Grad Date</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="date" name="gradDate" id="gradDate" placeholder="Grad Date"/>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="gpa">GPA</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="gpa" id="gpa" placeholder="GPA"/>
+                    </div>
+                </div>
+
+                <hr/>
+            </fieldset>
+            <fieldset>
+                <legend>SAT Score</legend>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="mathSAT">Math SAT</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="mathSAT" id="mathSAT" placeholder="Math SAT"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="mathSAT">Math SAT</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="mathSAT" id="mathSAT" placeholder="Math SAT"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="verbalSAT">Verbal SAT</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="verbalSAT" id="verbalSAT" placeholder="Verbal SAT"/>
+                    </div>
+                </div>
+                <hr/>
+            </fieldset>
+            <fieldset>
+                <legend>Enrollment Details</legend>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="primaryMajor">Primary Major</label>
+                    <div class="col-md-10">
+                      <select name="primaryMajor">
+                        <option value="default">--Select Major--</option>
+                        <option value="Math">Math</option>
+                        <option value="English">English</option>
+                        <option value="Information Technology">Information Technology</option>
+                      </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="prospectiveSemester">Prospective Semester</label>
+                    <div class="col-md-10">
+                      <select name="prospectiveSemester">
+                        <option value="default">--Select Semester--</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="prospectiveYear">Prospective Year</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" name="prospectiveYear" id="prospectiveYear" placeholder="Prospective Year"/>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Submit" class="btn btn-default" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar fixed-bottom footerPart">
+        <div class="footerPortion">
+            <hr />
+            <p>&copy; <span class="dateNow"></span> - George Mason University</p>
+            <p>4400 University Dr, Fairfax, VA 22030</p>
+            <p>(703) 993-1000</p>
+        </div>
+
+    </nav>
+  </body>
+</html>

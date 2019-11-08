@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "george mason university admissions example website">
+    <title>George Mason University Admissions</title>
+
+    <link href = "css/bootstrap-theme.css" rel="stylesheet">
+    <link href = "css/bootstrap.css" rel="stylesheet">
+    <link href = "css/Site.css" rel="stylesheet">
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#navbar-Area').load("navbar.html");
+        $('.dateNow').text(new Date().getFullYear());
+      });
+    </script>
+  </head>
+  <body>
+    <div id="navbar-Area" style="background-color: #333333 !important;">
+    </div>
+
+    <div class="container body-content">
+      <div class="outsideBannerGradient">
+          <div class="imageBanner">
+              <img src="./Images/mason-logo.png" class="floatingLogo img-fluid" />
+              <div class="introTextHeader">Admissions</div>
+          </div>
+      </div>
+
+      <div class="jumbotron intro topOf">
+          <div class="innerText">
+              <h1>Join Us!</h1>
+              <p class="lead">This is George Mason University, home of the patriots!</p><p>Established as an independent institution in 1972, we have since grown to have 35,960 students, 500 student groups, 41 fraternities and sororities and more are yet to come! <br />Want to learn join?</p>
+          </div>
+          <div class="buttonsList">
+              <p>
+                  <a href="#bio" class="btn btn-primary btn-lg otherColorBtn floaterLeft">Learn more</a>
+                  <a href="apply.html" class="btn btn-primary btn-lg otherColorBtn floaterRight">Apply Now</a>
+              </p>
+          </div>
+
+
+      </div>
+
+      <div id="campuses">
+          <h1>Campuses</h1>
+
+          <div class="imageBoxesLong">
+              <div class="contentBox">
+                  <div class="textTop">
+                      <h3 class="placeTitle">Fairfax</h3>
+                  </div>
+                  <img src="./Images/Fairfax-Campus.jpg" class="innerImageBox" />
+              </div>
+
+              <div class="contentBox">
+                  <div class="textTop">
+                      <h3 class="placeTitle">SciTech</h3>
+                  </div>
+                  <img src="./Images/SciTech-Campus.jpg" class="innerImageBox" />
+              </div>
+
+              <div class="contentBox">
+                  <div class="textTop">
+                      <h3 class="placeTitle">Arlington</h3>
+                  </div>
+                  <img src="./Images/Arlington-Campus.jpg" class="innerImageBox" />
+
+              </div>
+
+              <div class="contentBox">
+                  <div class="textTop">
+                      <h3 class="placeTitle">Korea</h3>
+                  </div>
+                  <img src="./Images/Mason-Korea.jpg" class="innerImageBox" />
+              </div>
+
+          </div>
+      </div>
+
+
+      <div id="bio">
+          <h1>About George Mason University</h1>
+          <div class="jumbotron intro bioInfo">
+              <p>
+                  George Mason University is a public university where it's main campus is the Fairfax campus. George Mason University is one of the many universities in Virginia and it happened to be a branch of the University of Virginia in 1949 and then gained it's independence and freedom in 1972. It was named after one of the dudes who worked on the Virginia Declaration of Rights.<br /><br /> George Mason University has been expanding it's operations ever since it gained independence in 1972 to other places like Prince William (a.k.a. SciTech), Arlington, and even South Korea! Yet, they still don't expand their parking lots and wifi, and now their students struggle just to find parking to get to class or get decent speeds on the main campus. Further compounding the parking crisis, parking passes are really expensive for general parking. Maybe it's to pay for George Mason University's ambitious project called the Core Campus Project or maybe it was for the students to be blessed with adorable little robots that vroom around the campus.<br/><br/> The university has it's pros and cons. There are other things the university offers like the EagleBank Arena which can seat 10,000 people for things like concerts and basketball games. The university hosts 500 student groups and so many fraternities and sororities.
+              </p>
+              <a href="https://en.wikipedia.org/wiki/George_Mason_University" class="btn btn-primary btn-sm otherColorBtn" target="_blank">Just Read About it on Wikipedia</a>
+          </div>
+      </div>
+
+      <div id="sources">
+          <h1>Sources</h1>
+          <div class="jumbotron intro sources">
+              <ul>
+                  <li>GMU logo: <a href="https://www2.gmu.edu/">GMU Official Website</a></li>
+                  <li>GMU Fairfax Picture: <a href="https://www2.gmu.edu/">GMU Official Website</a></li>
+                  <li>GMU SciTech Picture: <a href="https://www2.gmu.edu/">GMU Official Website</a></li>
+                  <li>GMU Arlington Picture: <a href="https://www2.gmu.edu/">GMU Official Website</a></li>
+                  <li>GMU Korea Picture: <a href="https://www2.gmu.edu/">GMU Official Website</a></li>
+                  <li>GMU hero image banner: <a href="https://intoglobal.com/partnerships/united-states/george-mason-university.aspx">IntoGlobal</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <nav class="navbar fixed-bottom footerPart">
+        <div class="footerPortion">
+            <hr />
+            <p>&copy; <span class="dateNow"></span> - George Mason University</p>
+            <p>4400 University Dr, Fairfax, VA 22030</p>
+            <p>(703) 993-1000</p>
+        </div>
+
+    </nav>
+  </body>
+</html>
